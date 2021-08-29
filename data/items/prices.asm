@@ -9,7 +9,7 @@ ItemPrices::
 	bcd3 0     ; SURFBOARD
 	bcd3 1000  ; SAFARI_BALL
 	bcd3 0     ; POKEDEX
-	bcd3 2100     ; MOON_STONE
+	bcd3 2100  ; MOON_STONE
 	bcd3 100   ; ANTIDOTE
 	bcd3 250   ; BURN_HEAL
 	bcd3 250   ; ICE_HEAL
@@ -48,7 +48,7 @@ ItemPrices::
 	bcd3 950   ; X_ACCURACY
 	bcd3 2100  ; LEAF_STONE
 	bcd3 0     ; CARD_KEY
-	bcd3 9800  ; NUGGET
+	bcd3 10000 ; NUGGET
 	bcd3 9800  ; XXX PP_UP
 	bcd3 1000  ; POKE_DOLL
 	bcd3 600   ; FULL_HEAL
@@ -79,10 +79,10 @@ ItemPrices::
 	bcd3 0     ; GOOD_ROD
 	bcd3 0     ; SUPER_ROD
 	bcd3 9800  ; PP_UP
-	bcd3 0     ; ETHER
-	bcd3 0     ; MAX_ETHER
-	bcd3 0     ; ELIXER
-	bcd3 0     ; MAX_ELIXER
+	bcd3 1200  ; ETHER
+	bcd3 2000  ; MAX_ETHER
+	bcd3 3000  ; ELIXER
+	bcd3 4500  ; MAX_ELIXER
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F
