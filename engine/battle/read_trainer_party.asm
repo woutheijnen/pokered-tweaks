@@ -125,22 +125,24 @@ ReadTrainer:
 	jr .FinishUp
 .ChampionRival ; give moves to his team
 
-; pidgeot
-	ld a, SKY_ATTACK
-	ld [wEnemyMon1Moves + 2], a
+; snorlax
+	ld a, EARTHQUAKE
+	ld [wEnemyMon3Moves + 1], a
+	ld a, REST
+	ld [wEnemyMon3Moves + 2], a
 
-; starter
-	ld a, [wRivalStarter]
-	cp STARTER3
-	ld b, MEGA_DRAIN
-	jr z, .GiveStarterMove
-	cp STARTER1
-	ld b, FIRE_BLAST
-	jr z, .GiveStarterMove
-	ld b, BLIZZARD ; must be squirtle
-.GiveStarterMove
-	ld a, b
+; chansey
+	ld a, THUNDERBOLT
+	ld [wEnemyMon4Moves + 1], a
+	ld a, ICE_BEAM
+	ld [wEnemyMon4Moves + 2], a
+	ld a, SOFTBOILED
+	ld [wEnemyMon4Moves + 3], a
+
+; mewtwo
+	ld a, BLIZZARD
 	ld [wEnemyMon6Moves + 2], a
+
 .FinishUp
 ; clear wAmountMoneyWon addresses
 	xor a
